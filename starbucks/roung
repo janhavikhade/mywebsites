@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pepsi</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <div class="rectangle"></div>
+    <header>
+        <a href="#"><img src="logo copy.png" class="logo"></a>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Menu</a></li>
+            <li><a href="#">What's New</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </header>
+    <div class="content">
+        <div class="textbox">
+            <h2><span>ALL YOUR
+                FAVORITE FLAVORS.
+                ALL RIGHT HERE.<br>PEPSI</span></h2>
+            <p>Pepsi. Diet Pepsi. Pepsi Zero Sugar. The gang’s all here. Compare flavors, get nutritional facts and check out ingredients for all our Pepsi products.</p>
+            <a href="#">Learn more</a>
+        </div>
+        <div class="imgBox">
+            <img src="pepsi001.png" class="Pepsi">
+        </div>
+    </div>
+        <ul class="thumb">
+            <li><img src="pepsi001.png" onclick="imgSlider('pepsi001.png');changeCircleColor('#017143')"></li>
+            <li><img src="pepsi002.png" onclick="imgSlider('pepsi002.png');changeCircleColor('#eb7495')"></li>
+            <li><img src="pepsi003.png" onclick="imgSlider('pepsi003.png');changeCircleColor('#d752b1')"></li>
+        </ul>
+        <ul class="sci">
+            <li><a href="https://www.facebook.com"><img src="facebook.png"  ></a></li>
+            <li><a href="https://www.instagram.com"><img src="instagram.png"></a></li>
+            <li><a href="https://twitter.com"><img src="twitter.png"></a></li>
+        </ul>
+    </section>
+    
+    <script type="text/javascript">
+        function imgSlider(anything){
+            document.querySelector('.pepsi').src = anything;
+        }
+    
+        function changeRectangleColor(color){
+            const circle = document.querySelector('.rectangle');
+            circle.style.background = color;
+        }
+    </script>
+    </body>
+    </html>
+    
+</body>
+</html>
